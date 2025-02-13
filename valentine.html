@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beating Heart</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart {
+            font-size: 150px;
+            color: red;
+            animation: heartBeat 1.5s infinite;
+            cursor: pointer; /* Make the heart clickable */
+        }
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Beating heart, which will open new page on click -->
+    <div class="heart" onclick="openValentinePage()">❤️</div>
+
+    <script>
+        // Function to open the new page when heart is clicked
+        function openValentinePage() {
+            window.location.href = 'valentine_page.html'; // Redirect to the new page
+        }
+    </script>
+    
+</body>
+</html>
+

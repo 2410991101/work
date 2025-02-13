@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; /* Baby pink background for the whole page */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Floating effect on the letterbox */
+        .letterbox {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 80%;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Animation keyframe for floating effect */
+        @keyframes float {
+            0% {
+                transform: translateY(0); /* Starting position */
+            }
+            50% {
+                transform: translateY(-15px); /* Floating upwards */
+            }
+            100% {
+                transform: translateY(0); /* Back to original position */
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e6007e; /* Dark pink color for the text */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- White letterbox container with baby pink background -->
+    <div class="letterbox">
+        <h1>Happy Valentine's Day!💕</h1>
+    </div>
+
+</body>
+</html>
+
+
